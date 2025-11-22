@@ -1,6 +1,5 @@
 using Common;
 using Consumer;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +22,7 @@ var consumer = app.Services.GetRequiredService<RabbitMqConsumer>();
 
 _ = consumer.ConsumeQueueAsync("task_queue", message =>
 {
-    Console.WriteLine($"[x] Received queue 2: {message}");
+    Console.WriteLine($"[x] Received queue 1: {message}");
 });
 
 app.Run();

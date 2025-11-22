@@ -1,6 +1,5 @@
 using Common;
 using ConsumerT;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
@@ -20,6 +19,6 @@ app.UseHttpsRedirection();
 
 var consumer = app.Services.GetRequiredService<RabbitMqConsumerT>();
 
-_ = consumer.ConsumeQueueAsync("payment","payment.*.*", message => { Console.WriteLine($"[x] Received queue 1: {message}"); });
+_ = consumer.ConsumeQueueAsync("user2","user.#", message => { Console.WriteLine($"[x] Received queue 1: {message}"); });
 
 app.Run();

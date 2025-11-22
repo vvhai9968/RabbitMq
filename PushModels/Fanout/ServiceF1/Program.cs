@@ -1,6 +1,5 @@
 using Common;
 using ConsumerF;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 

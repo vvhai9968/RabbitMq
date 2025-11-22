@@ -1,6 +1,5 @@
 ﻿using System.Text;
 using Common;
-using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 
 namespace ProducerT;

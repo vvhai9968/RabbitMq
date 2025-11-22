@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Common\Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="RabbitMQ.Client" Version="7.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.Options">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.20\Microsoft.Extensions.Options.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
